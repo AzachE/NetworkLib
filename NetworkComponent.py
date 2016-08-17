@@ -7,16 +7,15 @@ class NetworkComponent():
 		saves the given data for the component
 		"""
 		if info_lst:
-			ip = info_lst[0]
-			mac = info_lst[1]
-			host = info_lst[2]
+			ip = str(info_lst[0])
+			mac = str(info_lst[1])
+			host = str(info_lst[2])
 		self.ip = ip
 		self.mac = mac
 		self.host = host
 
-	def print_data(self):
-		print self.ip
-		print self.mac
-		print self.host
+	def get_string(self):
+		comp_string = self.ip + '\n' + self.mac + '\n' + self.host
+		return comp_string
 		
 		

@@ -40,7 +40,7 @@ class Scanner():
             if net:
                 self.all_components = self.scan_and_print_neighbors(net, interface)
                 for comp in self.all_components:
-                    comp.print_data()
+                    print(comp.get_string())
 
 
     def get_components(self):
