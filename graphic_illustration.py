@@ -8,8 +8,8 @@ class GraphicMain():
 		self.graphic_locationer = graphic_locationer
 		self.root = root
 		self.canvas = tk.Canvas(self.root, width = constants.WINDOW_WIDTH, height = constants.WINDOW_HEIGHT)
-		self.pc_img = ImageTk.PhotoImage(Image.open("resources\\pc-icon.png").resize((constants.IMG_HEIGHT, constants.IMG_WIDTH)))
-		self.router_img = ImageTk.PhotoImage(Image.open("resources\\router-icon.png").resize((constants.IMG_HEIGHT + 32, constants.IMG_WIDTH + 32)))
+		self.pc_img = ImageTk.PhotoImage(Image.open("resources/pc-icon.png").resize((constants.IMG_HEIGHT, constants.IMG_WIDTH)))
+		self.router_img = ImageTk.PhotoImage(Image.open("resources/router-icon.png").resize((constants.IMG_HEIGHT + 32, constants.IMG_WIDTH + 32)))
 		self.canvas.pack()
 		self.canvas.bind("<Button-1>",self.on_click)
 		self.textbox = tk.Text(self.root, height = 8, width= 100)
